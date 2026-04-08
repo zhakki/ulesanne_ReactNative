@@ -8,14 +8,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# React Native / Metro
+# Dependencies
 node_modules/
-.expo/
-.metro-health-check*
-*.bundle
-
-# Tests / coverage
-coverage/
 
 # Environment
 .env
@@ -26,10 +20,16 @@ coverage/
 .vscode/
 *.iml
 
-# Android Studio / Gradle
+# React Native / Metro
+.expo/
+.metro-health-check*
+coverage/
+
+# Android
 android/.gradle/
-android/app/build/
 android/build/
+android/app/build/
+android/local.properties
 local.properties
 *.keystore
 *.jks
@@ -37,19 +37,17 @@ local.properties
 # iOS
 ios/build/
 ios/Pods/
-*.xcworkspace
+
+# Ruby / Bundler
+vendor/
+.bundle/
 
 # Temporary
 tmp/
 temp/
 *.swp
 
-# Generated files
+# Optional artifacts
 dist/
 build/
-
-# Watchman
-.watchmanconfig
-
-# Bundle artifacts
 *.hprof
